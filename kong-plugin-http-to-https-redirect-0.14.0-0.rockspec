@@ -1,7 +1,7 @@
 package = "kong-plugin-http-to-https-redirect"
-version = "0.13.1-0"
+version = "0.14.0-0"
 source = {
-    url = "git://github.com/HappyValleyIO/kong-http-to-https-redirect",
+    url = "https://github.com/siaomingjeng/http-to-https-redirect.git",
     branch = "master"
 }
 description = {
@@ -9,7 +9,7 @@ description = {
     detailed = [[
       Redirects traffic from HTTP to HTTPS (currently only offers 301 redirect from port 80 to 443).
     ]],
-    homepage = "https://github.com/HappyValleyIO/kong-http-to-https-redirect",
+    homepage = "https://github.com/siaomingjeng/http-to-https-redirect.git",
     license = "MIT"
 }
 dependencies = {
@@ -17,7 +17,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-    ["kong.plugins.http-to-https-redirect.handler"] = "src/handler.lua",
-    ["kong.plugins.http-to-https-redirect.schema"] = "src/schema.lua",
+    ["kong.plugins.http-to-https-redirect.handler"] = "kong/plugins/handler.lua",
+    ["kong.plugins.http-to-https-redirect.schema"] = "kong/plugins/schema.lua",
     }
 }

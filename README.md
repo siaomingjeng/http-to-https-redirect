@@ -1,4 +1,4 @@
-# http-to-https-redirect
+🦍 http-to-https-redirect
 301 redirect from http to https
 From port 80 to port 443 only
 
