@@ -13,8 +13,7 @@ luarocks install *.rockspec
 Then in the kong.yml add 
 
 ```
-custom_plugins:
-  - http-to-https-redirect
+plugins:bundled,http-to-https-redirect
 ```
 
 Run kong reload or start and add the plugin as normal.
